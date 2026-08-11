@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: evalrift
+message: "If you use this software in research, cite the repository and release."
+type: software
+authors:
+  - name: sushanth
+version: 0.1.0
+date-released: 2026-08-11
+license: MIT

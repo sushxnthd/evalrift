@@ -1,0 +1,6 @@
+{
+  "base_accuracy": 1.0,
+  "perturbed_mean": 0.2507,
+  "worst_accuracy": 0.17,
+  "max_drop": 0.83
+}

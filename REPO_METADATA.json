@@ -1,0 +1,12 @@
+{
+  "name": "evalrift",
+  "description": "Measure benchmark fragility under semantics-preserving evaluation perturbations.",
+  "topics": [
+    "llm-evaluation",
+    "benchmarks",
+    "robustness",
+    "machine-learning",
+    "evaluation"
+  ],
+  "visibility": "public"
+}
