@@ -1,6 +1,7 @@
 # evalrift
 
 [![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF)](.github/workflows/ci.yml) [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)](pyproject.toml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[**Live demo →**](https://sushxnthd.github.io/evalrift/) · [Architecture](docs/architecture.md) · [Benchmarks](benchmarks/results.json)
 
 
 Benchmark fragility testing for multiple-choice evaluations. `evalrift` asks a simple question: does a reported score survive harmless changes to presentation?
