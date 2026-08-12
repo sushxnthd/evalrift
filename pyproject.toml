@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "evalrift"
-version = "0.1.0"
+version = "0.2.0"
 description = "Measure benchmark ranking instability under semantics-preserving perturbations."
 readme = "README.md"
 requires-python = ">=3.10"
