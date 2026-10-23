@@ -33,7 +33,15 @@
     "strict_numeric_AQSID_unique_sitehours_ineligible_certified_USGplus": 431,
     "strict_numeric_AQSID_unique_sitehours_ineligible_certified_Unhealthyplus": 310,
     "strict_numeric_AQSID_unique_sitehours_ineligible_certified_VeryUnhealthyplus": 91,
-    "strict_numeric_AQSID_unique_sitehours_ineligible_certified_Hazardous": 15
+    "strict_numeric_AQSID_unique_sitehours_ineligible_certified_Hazardous": 15,
+    "strict_numeric_AQSID_unique_sitedays_ineligible_certified_USGplus": 260,
+    "strict_numeric_AQSID_unique_sitedays_ineligible_certified_Unhealthyplus": 204,
+    "strict_numeric_AQSID_unique_sitedays_ineligible_certified_VeryUnhealthyplus": 75,
+    "strict_numeric_AQSID_unique_sitedays_ineligible_certified_Hazardous": 13,
+    "strict_numeric_AQSID_unique_sites_ineligible_certified_USGplus": 96,
+    "strict_numeric_AQSID_unique_sites_ineligible_certified_Unhealthyplus": 76,
+    "strict_numeric_AQSID_unique_sites_ineligible_certified_VeryUnhealthyplus": 40,
+    "strict_numeric_AQSID_unique_sites_ineligible_certified_Hazardous": 8
   },
   "top_cases": [
     {
