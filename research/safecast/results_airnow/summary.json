@@ -25,7 +25,15 @@
     "ineligible_certified_VeryUnhealthyplus": 113,
     "ineligible_certified_Hazardous": 29,
     "unique_sitehours_ineligible_but_certified_USGplus": 523,
-    "unique_sitehours_official_category_not_guaranteed": 5690
+    "unique_sitehours_official_category_not_guaranteed": 5690,
+    "unique_sitehours_ineligible_certified_USGplus": 523,
+    "unique_sitehours_ineligible_certified_Unhealthyplus": 360,
+    "unique_sitehours_ineligible_certified_VeryUnhealthyplus": 112,
+    "unique_sitehours_ineligible_certified_Hazardous": 28,
+    "strict_numeric_AQSID_unique_sitehours_ineligible_certified_USGplus": 431,
+    "strict_numeric_AQSID_unique_sitehours_ineligible_certified_Unhealthyplus": 310,
+    "strict_numeric_AQSID_unique_sitehours_ineligible_certified_VeryUnhealthyplus": 91,
+    "strict_numeric_AQSID_unique_sitehours_ineligible_certified_Hazardous": 15
   },
   "top_cases": [
     {
