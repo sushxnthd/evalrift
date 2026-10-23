@@ -23,6 +23,7 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install --quiet numpy scipy pandas pyreadr
       - run: python research/safecast/audit_airnow_2020.py
+      - run: python research/safecast/spatial_airnow_2020.py
       - name: Commit retained AirNow results
         run: |
           git config user.name "safecast-research-bot"
