@@ -86,10 +86,15 @@ def main():
                 if nmiss: totals["windows_with_missing"]+=1
                 if nrecent<2:
                     totals["official_ineligible"]+=1
-                    if low>=35.5: totals["ineligible_certified_USGplus"]+=1
-                    if low>=55.5: totals["ineligible_certified_Unhealthyplus"]+=1
-                    if low>=125.5: totals["ineligible_certified_VeryUnhealthyplus"]+=1
-                    if low>=225.5: totals["ineligible_certified_Hazardous"]+=1
+                    sev=[]
+                    if low>=35.5: totals["ineligible_certified_USGplus"]+=1; sev.append("USGplus")
+                    if low>=55.5: totals["ineligible_certified_Unhealthyplus"]+=1; sev.append("Unhealthyplus")
+                    if low>=125.5: totals["ineligible_certified_VeryUnhealthyplus"]+=1; sev.append("VeryUnhealthyplus")
+                    if low>=225.5: totals["ineligible_certified_Hazardous"]+=1; sev.append("Hazardous")
+                    for s in sev:
+                        unique_by_severity[s].add((site,timestamp))
+                        if site.isdigit() and len(site)==12:
+                            strict_unique_by_severity[s].add((site,timestamp))
                     if low>=35.5:
                         sitehour_inelig.add((site,timestamp))
                         cases.append({"month":month,"state":state,"county":county,"site":site,"device":did,
@@ -112,6 +117,8 @@ def main():
                     totals["current_missing_but_2of3_eligible"]+=1
     totals["unique_sitehours_ineligible_but_certified_USGplus"]=len(sitehour_inelig)
     totals["unique_sitehours_official_category_not_guaranteed"]=len(sitehour_notrobust)
+    for s,v in unique_by_severity.items(): totals[f"unique_sitehours_ineligible_certified_{s}"]=len(v)
+    for s,v in strict_unique_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sitehours_ineligible_certified_{s}"]=len(v)
     cases.sort(key=lambda x:(x["lower"],x["time"]),reverse=True)
     out={
       "source":"USFS AirFire preprocessed AirNow monthly PM2.5 archive",
