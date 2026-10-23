@@ -1,0 +1,821 @@
+{
+  "stats": {
+    "events": 310,
+    "no_eligible_within_25km": 219,
+    "all_eligible_within_50km_below_Unhealthy": 11,
+    "robust_lower_exceeds_all_eligible_within_50km": 31,
+    "all_eligible_within_25km_below_Unhealthy": 4,
+    "robust_lower_exceeds_all_eligible_within_25km": 13,
+    "robust_lower_exceeds_all_eligible_within_100km": 47,
+    "no_eligible_within_50km": 128,
+    "all_eligible_within_100km_below_Unhealthy": 25,
+    "no_eligible_within_100km": 45
+  },
+  "examples": [
+    {
+      "site": "840410230002",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 60.753,
+      "nearest_eligible_km": 188.4,
+      "nearest_eligible_site": "840530710005",
+      "nearest_eligible_nowcast": 202.434
+    },
+    {
+      "site": "840410130100",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 151.005,
+      "nearest_eligible_km": 150.22,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 471.817
+    },
+    {
+      "site": "840410130100",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 108.763,
+      "nearest_eligible_km": 150.22,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410130100",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 117.278,
+      "nearest_eligible_km": 150.22,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410172002",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 64.103,
+      "nearest_eligible_km": 147.73,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 471.817
+    },
+    {
+      "site": "840410172002",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 93.864,
+      "nearest_eligible_km": 147.73,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410172002",
+      "time": "2020-09-17T11:00:00+00:00",
+      "lower": 92.359,
+      "nearest_eligible_km": 147.73,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 95.549
+    },
+    {
+      "site": "840410172002",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 179.218,
+      "nearest_eligible_km": 147.73,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410010004",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 74.587,
+      "nearest_eligible_km": 146.71,
+      "nearest_eligible_site": "840530710005",
+      "nearest_eligible_nowcast": 202.434
+    },
+    {
+      "site": "840410432002",
+      "time": "2020-09-10T02:00:00+00:00",
+      "lower": 184.608,
+      "nearest_eligible_km": 139.18,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 15.669
+    },
+    {
+      "site": "840410432002",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 166.328,
+      "nearest_eligible_km": 139.18,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 27.448
+    },
+    {
+      "site": "840410432002",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 165.343,
+      "nearest_eligible_km": 139.18,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 146.429
+    },
+    {
+      "site": "840410432002",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 82.633,
+      "nearest_eligible_km": 139.18,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 185.236
+    },
+    {
+      "site": "840410432002",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 112.87,
+      "nearest_eligible_km": 139.18,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 243.977
+    },
+    {
+      "site": "840410351001",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 56.931,
+      "nearest_eligible_km": 137.66,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 106.817
+    },
+    {
+      "site": "840410170123",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 70.608,
+      "nearest_eligible_km": 132.37,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 471.817
+    },
+    {
+      "site": "840410170123",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 103.245,
+      "nearest_eligible_km": 132.37,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410170123",
+      "time": "2020-09-17T11:00:00+00:00",
+      "lower": 83.016,
+      "nearest_eligible_km": 132.37,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 95.549
+    },
+    {
+      "site": "840410170123",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 185.87,
+      "nearest_eligible_km": 132.37,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410170120",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 163.82,
+      "nearest_eligible_km": 130.58,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 471.817
+    },
+    {
+      "site": "840410170120",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 118.111,
+      "nearest_eligible_km": 130.58,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410170120",
+      "time": "2020-09-17T11:00:00+00:00",
+      "lower": 113.677,
+      "nearest_eligible_km": 130.58,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 95.549
+    },
+    {
+      "site": "840410170120",
+      "time": "2020-09-17T12:00:00+00:00",
+      "lower": 56.825,
+      "nearest_eligible_km": 130.58,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 100.682
+    },
+    {
+      "site": "840410170120",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 222.343,
+      "nearest_eligible_km": 130.58,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410171001",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 83.651,
+      "nearest_eligible_km": 126.2,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 471.817
+    },
+    {
+      "site": "840410171001",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 142.33,
+      "nearest_eligible_km": 126.2,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410171001",
+      "time": "2020-09-17T11:00:00+00:00",
+      "lower": 149.966,
+      "nearest_eligible_km": 126.2,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 95.549
+    },
+    {
+      "site": "840410171001",
+      "time": "2020-09-17T12:00:00+00:00",
+      "lower": 74.954,
+      "nearest_eligible_km": 126.2,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 100.682
+    },
+    {
+      "site": "840410171001",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 245.737,
+      "nearest_eligible_km": 126.2,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410430009",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 176.092,
+      "nearest_eligible_km": 120.92,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 27.448
+    },
+    {
+      "site": "840410430009",
+      "time": "2020-09-10T21:00:00+00:00",
+      "lower": 71.98,
+      "nearest_eligible_km": 120.92,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 149.832
+    },
+    {
+      "site": "840410430009",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 222.735,
+      "nearest_eligible_km": 120.92,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 146.429
+    },
+    {
+      "site": "840410430009",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 111.31,
+      "nearest_eligible_km": 120.92,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 185.236
+    },
+    {
+      "site": "840410310007",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 199.663,
+      "nearest_eligible_km": 118.54,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 471.817
+    },
+    {
+      "site": "840410310007",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 122.826,
+      "nearest_eligible_km": 118.54,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410310007",
+      "time": "2020-09-17T11:00:00+00:00",
+      "lower": 74.43,
+      "nearest_eligible_km": 118.54,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 95.549
+    },
+    {
+      "site": "840410310007",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 140.332,
+      "nearest_eligible_km": 118.54,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410352040",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 72.083,
+      "nearest_eligible_km": 107.91,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 275.019
+    },
+    {
+      "site": "840410352040",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 78.676,
+      "nearest_eligible_km": 107.91,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 109.481
+    },
+    {
+      "site": "840410290019",
+      "time": "2020-09-11T01:00:00+00:00",
+      "lower": 108.166,
+      "nearest_eligible_km": 100.74,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 121.749
+    },
+    {
+      "site": "840410290019",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 92.182,
+      "nearest_eligible_km": 100.74,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 106.817
+    },
+    {
+      "site": "840410170004",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 128.34,
+      "nearest_eligible_km": 100.04,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 226.226
+    },
+    {
+      "site": "840410170004",
+      "time": "2020-09-17T11:00:00+00:00",
+      "lower": 131.53,
+      "nearest_eligible_km": 100.04,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 95.549
+    },
+    {
+      "site": "840410170004",
+      "time": "2020-09-17T12:00:00+00:00",
+      "lower": 65.727,
+      "nearest_eligible_km": 100.04,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 100.682
+    },
+    {
+      "site": "840410170004",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 262.835,
+      "nearest_eligible_km": 100.04,
+      "nearest_eligible_site": "840410432003",
+      "nearest_eligible_nowcast": 132.013
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 90.413,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 15.753
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 151.112,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 92.801
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 75.529,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 104.913
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-11T01:00:00+00:00",
+      "lower": 145.625,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 121.749
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 78.818,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 106.817
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 78.496,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 275.019
+    },
+    {
+      "site": "840410330114",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 63.212,
+      "nearest_eligible_km": 98.32,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 109.481
+    },
+    {
+      "site": "840410650007",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 138.646,
+      "nearest_eligible_km": 98.12,
+      "nearest_eligible_site": "840530110022",
+      "nearest_eligible_nowcast": 280.541
+    },
+    {
+      "site": "840410530004",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 119.843,
+      "nearest_eligible_km": 97.72,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 146.429
+    },
+    {
+      "site": "840410530004",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 59.899,
+      "nearest_eligible_km": 97.72,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 185.236
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-10T21:00:00+00:00",
+      "lower": 56.218,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 11.562
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 239.811,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 92.801
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 119.895,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 104.913
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-11T00:00:00+00:00",
+      "lower": 59.936,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 115.47
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-11T01:00:00+00:00",
+      "lower": 243.31,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 121.749
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 148.778,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 106.817
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 160.232,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 275.019
+    },
+    {
+      "site": "840410330036",
+      "time": "2020-09-21T15:00:00+00:00",
+      "lower": 61.912,
+      "nearest_eligible_km": 96.86,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 47.437
+    },
+    {
+      "site": "840410432003",
+      "time": "2020-09-10T02:00:00+00:00",
+      "lower": 182.692,
+      "nearest_eligible_km": 96.17,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 15.669
+    },
+    {
+      "site": "840410432003",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 168.773,
+      "nearest_eligible_km": 96.17,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 27.448
+    },
+    {
+      "site": "840410432003",
+      "time": "2020-09-10T21:00:00+00:00",
+      "lower": 116.994,
+      "nearest_eligible_km": 96.17,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 149.832
+    },
+    {
+      "site": "840410432003",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 203.783,
+      "nearest_eligible_km": 96.17,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 146.429
+    },
+    {
+      "site": "840410432003",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 101.834,
+      "nearest_eligible_km": 96.17,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 185.236
+    },
+    {
+      "site": "840410470004",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 275.805,
+      "nearest_eligible_km": 96.12,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 27.448
+    },
+    {
+      "site": "840410470004",
+      "time": "2020-09-10T21:00:00+00:00",
+      "lower": 103.984,
+      "nearest_eligible_km": 96.12,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 149.832
+    },
+    {
+      "site": "840410470004",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 233.836,
+      "nearest_eligible_km": 96.12,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 146.429
+    },
+    {
+      "site": "840410470004",
+      "time": "2020-09-10T23:00:00+00:00",
+      "lower": 116.825,
+      "nearest_eligible_km": 96.12,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 185.236
+    },
+    {
+      "site": "840410470004",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 100.742,
+      "nearest_eligible_km": 96.12,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 243.977
+    },
+    {
+      "site": "840410610120",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 55.96,
+      "nearest_eligible_km": 94.09,
+      "nearest_eligible_site": "840530710005",
+      "nearest_eligible_nowcast": 202.434
+    },
+    {
+      "site": "840410230002",
+      "time": "2020-09-13T21:00:00+00:00",
+      "lower": 100.566,
+      "nearest_eligible_km": 92.48,
+      "nearest_eligible_site": "840410250003",
+      "nearest_eligible_nowcast": 86.207
+    },
+    {
+      "site": "840060431001",
+      "time": "2020-09-14T19:00:00+00:00",
+      "lower": 82.937,
+      "nearest_eligible_km": 90.94,
+      "nearest_eligible_site": "840060470003",
+      "nearest_eligible_nowcast": 88.06
+    },
+    {
+      "site": "840060431001",
+      "time": "2020-09-14T20:00:00+00:00",
+      "lower": 199.979,
+      "nearest_eligible_km": 90.94,
+      "nearest_eligible_site": "840060470003",
+      "nearest_eligible_nowcast": 89.399
+    },
+    {
+      "site": "840410350004",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 120.578,
+      "nearest_eligible_km": 90.67,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 275.019
+    },
+    {
+      "site": "840410610123",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 95.888,
+      "nearest_eligible_km": 84.48,
+      "nearest_eligible_site": "840530710005",
+      "nearest_eligible_nowcast": 202.434
+    },
+    {
+      "site": "840410470041",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 63.339,
+      "nearest_eligible_km": 84.47,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 27.448
+    },
+    {
+      "site": "840410470041",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 83.389,
+      "nearest_eligible_km": 84.47,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 243.977
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-10T02:00:00+00:00",
+      "lower": 70.019,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 28.465
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 81.311,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 30.088
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 110.141,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 38.019
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-11T01:00:00+00:00",
+      "lower": 110.596,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 41.296
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 65.505,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 40.529
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-13T16:00:00+00:00",
+      "lower": 96.768,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 31.229
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 57.241,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 28.366
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-16T04:00:00+00:00",
+      "lower": 72.43,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 12.94
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-16T05:00:00+00:00",
+      "lower": 168.447,
+      "nearest_eligible_km": 75.79,
+      "nearest_eligible_site": "840410111036",
+      "nearest_eligible_nowcast": 12.118
+    },
+    {
+      "site": "840410050102",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 89.852,
+      "nearest_eligible_km": 74.12,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 319.286
+    },
+    {
+      "site": "840410470007",
+      "time": "2020-09-10T02:00:00+00:00",
+      "lower": 229.834,
+      "nearest_eligible_km": 71.65,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 15.669
+    },
+    {
+      "site": "840410470007",
+      "time": "2020-09-10T10:00:00+00:00",
+      "lower": 252.287,
+      "nearest_eligible_km": 71.65,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 27.448
+    },
+    {
+      "site": "840410470007",
+      "time": "2020-09-10T21:00:00+00:00",
+      "lower": 118.944,
+      "nearest_eligible_km": 71.65,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 149.832
+    },
+    {
+      "site": "840410470007",
+      "time": "2020-09-10T22:00:00+00:00",
+      "lower": 59.472,
+      "nearest_eligible_km": 71.65,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 146.429
+    },
+    {
+      "site": "840410470007",
+      "time": "2020-09-11T05:00:00+00:00",
+      "lower": 86.49,
+      "nearest_eligible_km": 71.65,
+      "nearest_eligible_site": "840530110024",
+      "nearest_eligible_nowcast": 243.977
+    },
+    {
+      "site": "840410190004",
+      "time": "2020-09-09T16:00:00+00:00",
+      "lower": 112.794,
+      "nearest_eligible_km": 71.65,
+      "nearest_eligible_site": "840410110003",
+      "nearest_eligible_nowcast": 98.638
+    },
+    {
+      "site": "840410270001",
+      "time": "2020-09-15T17:00:00+00:00",
+      "lower": 57.82,
+      "nearest_eligible_km": 71.34,
+      "nearest_eligible_site": "840530110022",
+      "nearest_eligible_nowcast": 90.665
+    },
+    {
+      "site": "840410270001",
+      "time": "2020-09-17T14:00:00+00:00",
+      "lower": 78.675,
+      "nearest_eligible_km": 71.34,
+      "nearest_eligible_site": "840530110022",
+      "nearest_eligible_nowcast": 128.511
+    },
+    {
+      "site": "840410292129",
+      "time": "2020-09-11T01:00:00+00:00",
+      "lower": 138.76,
+      "nearest_eligible_km": 70.27,
+      "nearest_eligible_site": "840060932001",
+      "nearest_eligible_nowcast": 121.749
+    }
+  ],
+  "notes": [
+    "Events restricted to permanent 12-digit numeric site IDs, observed PM2.5 in [0,1000], robust lower >=55.5.",
+    "Distance is straight-line between monitor coordinates; nearby monitors are not assumed interchangeable.",
+    "This is a coverage stress test, not a claim about reporting-area AQI."
+  ]
+}
