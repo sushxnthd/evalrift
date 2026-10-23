@@ -21,13 +21,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --quiet numpy scipy
+      - run: python -m pip install --quiet numpy scipy pandas pyreadr
       - run: python research/safecast/audit_2020.py
+      - run: python research/safecast/audit_airnow_2020.py
       - name: Commit retained results
         run: |
           git config user.name "safecast-research-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research/safecast/results
+          git add research/safecast/results research/safecast/results_airnow
           git diff --cached --quiet && exit 0
-          git commit -m "research: retain SafeCast 2020 EPA audit results"
+          git commit -m "research: retain SafeCast AQS and AirNow audits"
           git push origin HEAD:safecast-hunt
