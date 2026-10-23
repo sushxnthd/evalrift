@@ -51,7 +51,9 @@ def read_rda(url, path):
 def main():
     os.makedirs(OUTDIR,exist_ok=True)
     totals=defaultdict(int); cases=[]; meta_rows=[]
-    sitehour_inelig=set(); sitehour_notrobust=set()\n    unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}\n    strict_unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    sitehour_inelig=set(); sitehour_notrobust=set()
+    unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    strict_unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
     for month in MONTHS:
         meta_url=f"{BASE}/airnow_PM2.5_{month}_meta.rda"
         data_url=f"{BASE}/airnow_PM2.5_{month}_data.rda"
