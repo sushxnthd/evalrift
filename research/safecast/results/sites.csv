@@ -1,0 +1,117 @@
+county,current_missing_but_2of3_eligible,eligible_category_not_guaranteed,eligible_with_missing,ineligible_but_guaranteed_Hazardous,ineligible_but_guaranteed_USG,ineligible_but_guaranteed_Unhealthy,ineligible_but_guaranteed_Very Unhealthy,lat,lon,method,official_ineligible,poc,raw_hours,site,state,windows_with_missing
+Kern,8,9,59,,,,,35.050551,-118.147294,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,1485,3,713,06-029-0011,California,1579
+Kern,3,3,19,,,,,35.046528,-118.162833,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,1469,3,724,06-029-0019,California,1528
+Yakima,6,6,58,,,,,46.594952,-120.512283,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,1044,5,1159,53-077-0009,Washington,1104
+Mono,8,3,91,1,4,4,4,37.962069,-119.120278,Teledyne T640X at 16.67 LPM - Broadband spectroscopy,656,4,1549,06-051-0005,California,747
+Mono,8,2,91,1,4,4,4,37.962069,-119.120278,Teledyne T640X at 16.67 LPM (Corrected) - Broadband spectroscopy,656,24,1549,06-051-0005,California,747
+Colusa,5,5,42,,,,,39.021221,-122.281803,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,339,1,1843,06-011-0007,California,455
+Los Angeles,4,3,35,,,,,33.859662,-118.200707,Thermo Scientific 5014i or FH62C14-DHS w/VSCC - Beta Attenuation,332,3,1874,06-037-4008,California,367
+Yakima,5,4,56,,1,1,,46.38024,-120.33266,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,221,5,1976,53-077-0015,Washington,298
+Harney,5,3,49,,,,,43.58925,-119.04872,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,191,1,2015,41-025-0003,Oregon,248
+Snohomish,3,1,28,,,,,48.2469,-121.6031,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,148,5,2056,53-061-0020,Washington,218
+Riverside,10,9,112,,,,,33.99958,-117.41601,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,132,9,2074,06-065-8001,California,244
+Stevens,8,5,93,,,,,48.544448,-117.903425,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,125,5,2078,53-065-0005,Washington,218
+Mono,10,11,110,1,3,2,2,37.64571,-118.96652,Teledyne T640X at 16.67 LPM - Broadband spectroscopy,111,6,2092,06-051-0001,California,221
+Mono,10,11,110,1,3,2,2,37.64571,-118.96652,Teledyne T640X at 16.67 LPM (Corrected) - Broadband spectroscopy,111,26,2092,06-051-0001,California,221
+Nevada,14,11,152,,1,,,39.233477,-121.055608,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,99,3,2098,06-057-0005,California,286
+King,5,7,59,,,,,47.55975,-122.338265,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,98,5,2106,53-033-0057,Washington,157
+Snohomish,5,,48,,,,,48.054315,-122.171529,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,97,5,2107,53-061-1007,Washington,156
+Calaveras,26,26,230,,3,1,,38.20185,-120.680277,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,92,3,2100,06-009-0001,California,322
+Monterey,14,10,162,,3,1,,36.48187,-121.73333,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,88,3,2107,06-053-0002,California,293
+Santa Barbara,24,13,172,,,,,34.63782,-120.4575,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,86,1,2107,06-083-2004,California,284
+Sacramento,9,11,100,,,,,38.494475,-121.211131,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,82,3,2119,06-067-5003,California,188
+Santa Cruz,21,20,219,,,,,37.06315,-122.083092,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,79,3,2113,06-087-1005,California,348
+King,4,5,64,,,,,47.597222,-122.319722,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,72,5,2121,53-033-0030,Washington,142
+Inyo,8,9,83,,,,,37.360684,-118.330783,Teledyne T640X at 16.67 LPM - Broadband spectroscopy,71,1,2135,06-027-0002,California,154
+Inyo,8,7,83,,,,,37.360684,-118.330783,Teledyne T640X at 16.67 LPM (Corrected) - Broadband spectroscopy,71,21,2135,06-027-0002,California,154
+Tehama,9,6,85,,,,,40.17093,-122.25556,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,63,3,2136,06-103-0007,California,166
+Riverside,7,8,90,,,,,33.70853,-116.21537,Thermo Scientific 5014i or FH62C14-DHS w/VSCC - Beta Attenuation,57,3,2143,06-065-2002,California,175
+Lane,4,2,28,,,,,43.744352,-122.480487,Met One BAM-1022 Mass Monitor w/ VSCC or TE-PM2.5C - Beta Attenuation,55,2,2152,41-039-2013,Oregon,105
+Napa,10,15,129,,,,,38.278849,-122.275024,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,53,3,2145,06-055-0004,California,200
+Fresno,11,16,117,,13,9,3,36.985119,-119.658339,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,50,1,2153,06-019-0500,California,167
+Orange,7,7,52,,,,,33.63003,-117.67593,Thermo Scientific 5014i or FH62C14-DHS w/VSCC - Beta Attenuation,48,3,2155,06-059-2022,California,130
+San Diego,2,,23,,,,,33.362593,-117.09023,Teledyne T640 at 5.0 LPM - Broadband spectroscopy,46,1,2161,06-073-1201,California,69
+San Diego,2,,23,,,,,33.362593,-117.09023,Teledyne T640 at 5.0 LPM (Corrected) - Broadband spectroscopy,46,21,2161,06-073-1201,California,69
+King,4,2,28,,,,,47.386111,-122.230278,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,46,5,2157,53-033-2004,Washington,106
+Sutter,11,9,122,,,,,39.138773,-121.618549,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,45,3,2154,06-101-0003,California,167
+Riverside,15,8,157,,,,,33.747236,-115.820124,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,44,1,2154,06-065-0010,California,212
+San Bernardino,6,6,69,,,,,34.510961,-117.32554,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,41,2,2164,06-071-0306,California,110
+Santa Cruz,16,18,174,,,,,36.98332,-121.98822,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,37,3,2155,06-087-0007,California,251
+Alameda,34,30,366,,,,,37.701222,-121.903019,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,31,3,2149,06-001-0015,California,397
+Alameda,10,6,113,,,,,37.814781,-122.282347,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,28,3,2174,06-001-0011,California,145
+Contra Costa,12,10,133,,,,,37.936013,-122.026154,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,28,3,2171,06-013-0002,California,161
+King,3,2,33,,1,,,47.568236,-122.308628,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,26,5,2175,53-033-0080,Washington,91
+Riverside,6,5,58,,,,,33.447867,-117.088649,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,25,1,2180,06-065-0009,California,83
+Alameda,10,4,125,,1,,,37.793624,-122.263376,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,23,3,2173,06-001-0012,California,178
+Fresno,8,4,81,,,,,36.634225,-120.382331,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,23,3,2177,06-019-2009,California,130
+Mendocino,16,3,147,,,,,39.41174,-123.35264,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,20,3,2128,06-045-2002,California,557
+Kern,23,29,251,,2,2,1,35.642943,-117.715066,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,16,1,2174,06-029-0018,California,268
+Placer,11,14,143,,,,,38.93568,-121.09959,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,15,1,2179,06-061-0003,California,173
+Santa Barbara,10,5,118,,,,,34.427775,-119.691218,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,15,3,2185,06-083-0011,California,133
+Okanogan,7,3,69,,1,1,1,48.39999,-119.51896,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,15,5,2189,53-047-0013,Washington,88
+Orange,5,4,55,,,,,33.83062,-117.93845,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,14,3,2194,06-059-0007,California,69
+Kings,6,8,72,,,,,36.102244,-119.56565,Teledyne Model 602 Beta plus w/VSCC - Beta Attenuation,13,8,2192,06-031-0004,California,93
+Riverside,15,11,169,,,,,33.944713,-116.830074,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,13,1,2182,06-065-1016,California,210
+Klamath,6,5,68,,1,,,42.190296,-121.731369,Teledyne T640X at 16.67 LPM - Broadband spectroscopy,13,1,2193,41-035-0004,Oregon,81
+Klamath,6,4,68,,1,,,42.190296,-121.731369,Teledyne T640X at 16.67 LPM (Corrected) - Broadband spectroscopy,13,21,2193,41-035-0004,Oregon,81
+Inyo,8,6,90,,,,,36.487823,-117.871036,Thermo Scientific TEOM 1400 FDMS or 1405 8500C FDMS w/VSCC - FDMS Gravimetric,12,3,2194,06-027-1003,California,102
+Riverside,14,21,156,,,,,33.71969,-116.1897,Teledyne T640X at 16.67 LPM - Broadband spectroscopy,11,1,2188,06-065-0500,California,167
+Riverside,14,15,156,,,,,33.71969,-116.1897,Teledyne T640X at 16.67 LPM (Corrected) - Broadband spectroscopy,11,21,2188,06-065-0500,California,167
+Butte,6,8,78,,2,,,39.76168,-121.84047,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,10,3,2195,06-007-0008,California,90
+Los Angeles,3,2,33,,,,,33.79236,-118.17533,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,10,3,2198,06-037-4004,California,43
+San Mateo,17,16,197,,,,,37.482934,-122.20337,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,10,3,2186,06-081-1001,California,209
+Inyo,7,8,81,,,,,37.362137,-118.417478,Teledyne T640 at 5.0 LPM - Broadband spectroscopy,9,1,2195,06-027-1023,California,90
+Inyo,7,6,81,,,,,37.362137,-118.417478,Teledyne T640 at 5.0 LPM (Corrected) - Broadband spectroscopy,9,21,2195,06-027-1023,California,90
+Riverside,5,1,57,,,,,33.99636,-117.4924,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,9,3,2197,06-065-8005,California,66
+Alameda,15,14,177,,,,,37.864767,-122.302741,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,8,3,2188,06-001-0013,California,185
+Mendocino,14,9,156,,1,,,39.15047,-123.20655,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,8,3,2184,06-045-0006,California,231
+San Bernardino,6,2,68,,,,,34.030833,-117.61722,Thermo Scientific 5014i or FH62C14-DHS w/VSCC - Beta Attenuation,8,3,2198,06-071-0027,California,76
+Santa Clara,17,17,210,,,,,37.338135,-121.849783,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,8,3,2184,06-085-0006,California,231
+Sonoma,11,9,131,,,,,38.403765,-122.818294,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,7,3,2188,06-097-0004,California,168
+Ventura,9,5,77,,,,,34.44806,-119.2313,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,7,3,2193,06-111-1004,California,114
+San Bernardino,6,7,71,,,,,34.510961,-117.32554,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,6,1,2197,06-071-0306,California,77
+San Joaquin,10,7,111,,,,,37.950741,-121.268523,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,6,3,2194,06-077-1002,California,124
+San Joaquin,11,9,130,,,,,37.950741,-121.268523,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,6,4,2193,06-077-1002,California,136
+San Luis Obispo,10,9,117,1,3,2,1,35.49453,-120.66617,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,6,3,2195,06-079-8002,California,123
+Santa Clara,19,16,215,,,,,36.999571,-121.574684,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,6,3,2158,06-085-0002,California,401
+Kings,8,11,96,,,,,36.31567,-119.643447,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,5,3,2196,06-031-1004,California,101
+Solano,10,6,111,,,,,38.102507,-122.237976,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,5,3,2195,06-095-0004,California,117
+Stanislaus,7,6,82,,,,,37.642165,-120.994212,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,5,3,2198,06-099-0005,California,87
+Fresno,34,40,360,,,,,36.78538,-119.77321,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,4,4,2172,06-019-0011,California,364
+Merced,8,8,90,,,,,37.281853,-120.433671,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,4,3,2198,06-047-0003,California,94
+San Joaquin,7,4,84,,,,,37.793392,-121.247874,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,4,3,2197,06-077-2010,California,88
+San Luis Obispo,6,5,77,,,,,35.25651,-120.6693,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,4,3,2197,06-079-2006,California,99
+Siskiyou,12,10,131,,,,,41.726892,-122.633579,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,4,3,2194,06-093-2001,California,135
+Alameda,13,10,165,,,,,37.687526,-121.784217,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,3,3,2190,06-001-0007,California,183
+Contra Costa,16,5,159,,,,,37.9604,-122.356811,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2191,06-013-1004,California,161
+Fresno,7,11,74,,,,,36.78538,-119.77321,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2199,06-019-0011,California,97
+Fresno,6,9,71,,,,,36.819449,-119.716433,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2201,06-019-5001,California,73
+Los Angeles,6,3,71,,1,1,,34.669739,-118.130511,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,1,2201,06-037-9033,California,73
+Madera,7,6,83,,,,,36.953256,-120.034203,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2200,06-039-2010,California,85
+Marin,9,8,99,,,,,37.97231,-122.520004,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2196,06-041-0001,California,122
+San Benito,13,15,155,,,,,36.843425,-121.3621,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2194,06-069-0002,California,157
+San Luis Obispo,8,6,95,,,,,35.02083,-120.56388,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,1,2199,06-079-2004,California,97
+Santa Barbara,8,6,106,,,,,34.942872,-120.435611,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2198,06-083-1008,California,109
+Ventura,8,6,99,,,,,34.404281,-118.80998,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2198,06-111-0009,California,109
+Ventura,7,6,89,,,,,34.276316,-118.683685,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,4,2199,06-111-2002,California,97
+Ventura,9,13,103,,,,,34.25239,-119.143182,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,3,2197,06-111-3001,California,112
+Whatcom,4,,60,,,,,48.760036,-122.456463,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,2,5,2200,53-073-0019,Washington,74
+Santa Barbara,6,4,79,,,,,34.44551,-119.8284,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,1,1,2200,06-083-2011,California,86
+Alameda,12,8,144,,,,,37.743065,-122.169935,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2196,06-001-0009,California,144
+Fresno,5,10,60,,,,,36.710833,-119.7775,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2203,06-019-2016,California,60
+Monterey,12,15,153,,,,,36.209286,-121.126371,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2195,06-053-0008,California,156
+Monterey,14,9,149,,,,,36.694261,-121.623271,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2194,06-053-1003,California,168
+San Francisco,11,13,126,,,,,37.765946,-122.399044,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2196,06-075-0005,California,144
+San Luis Obispo,7,4,86,,,,,35.04673,-120.58777,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,1,2200,06-079-2007,California,96
+Santa Clara,12,6,149,,,,,37.348497,-121.894898,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2195,06-085-0005,California,156
+Solano,9,8,111,,,,,38.102507,-122.237976,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,4,2198,06-095-0004,California,114
+Stanislaus,6,6,72,,,,,37.488317,-120.836008,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2202,06-099-0006,California,72
+Ventura,8,7,96,,,,,34.210169,-118.870509,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2200,06-111-0007,California,96
+Ventura,8,4,96,,,,,34.276316,-118.683685,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,3,2200,06-111-2002,California,96
+Clark,6,2,72,,,,,45.64336,-122.58737,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,5,2202,53-011-0024,Washington,72
+Kitsap,3,1,42,,,,,47.592675,-122.627397,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,5,2204,53-035-0007,Washington,48
+Kittitas,4,3,37,,,,,46.99364,-120.545,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,5,2204,53-037-0002,Washington,48
+Pierce,4,1,48,,,,,47.22634,-122.46256,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,5,2204,53-053-0024,Washington,48
+Pierce,2,,29,,,,,47.22634,-122.46256,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,6,2205,53-053-0024,Washington,36
+Pierce,7,5,77,,,,,47.1864,-122.4517,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,5,2199,53-053-0029,Washington,108
+Spokane,5,5,60,,,,,47.672482,-117.364852,Met One BAM-1020 Mass Monitor w/VSCC - Beta Attenuation,,5,2203,53-063-0021,Washington,60
