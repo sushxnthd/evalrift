@@ -54,6 +54,8 @@ def main():
     sitehour_inelig=set(); sitehour_notrobust=set()
     unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
     strict_unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    strict_sitedays_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    strict_sites_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
     for month in MONTHS:
         meta_url=f"{BASE}/airnow_PM2.5_{month}_meta.rda"
         data_url=f"{BASE}/airnow_PM2.5_{month}_data.rda"
@@ -97,6 +99,8 @@ def main():
                         unique_by_severity[s].add((site,timestamp))
                         if site.isdigit() and len(site)==12:
                             strict_unique_by_severity[s].add((site,timestamp))
+                            strict_sitedays_by_severity[s].add((site,timestamp[:10]))
+                            strict_sites_by_severity[s].add(site)
                     if low>=35.5:
                         sitehour_inelig.add((site,timestamp))
                         cases.append({"month":month,"state":state,"county":county,"site":site,"device":did,
@@ -121,6 +125,8 @@ def main():
     totals["unique_sitehours_official_category_not_guaranteed"]=len(sitehour_notrobust)
     for s,v in unique_by_severity.items(): totals[f"unique_sitehours_ineligible_certified_{s}"]=len(v)
     for s,v in strict_unique_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sitehours_ineligible_certified_{s}"]=len(v)
+    for s,v in strict_sitedays_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sitedays_ineligible_certified_{s}"]=len(v)
+    for s,v in strict_sites_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sites_ineligible_certified_{s}"]=len(v)
     cases.sort(key=lambda x:(x["lower"],x["time"]),reverse=True)
     out={
       "source":"USFS AirFire preprocessed AirNow monthly PM2.5 archive",
