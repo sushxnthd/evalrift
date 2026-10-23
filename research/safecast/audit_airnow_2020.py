@@ -56,6 +56,9 @@ def main():
     strict_unique_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
     strict_sitedays_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
     strict_sites_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    permanent_strict_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    plausible_strict_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
+    permanent_plausible_strict_by_severity={k:set() for k in ["USGplus","Unhealthyplus","VeryUnhealthyplus","Hazardous"]}
     for month in MONTHS:
         meta_url=f"{BASE}/airnow_PM2.5_{month}_meta.rda"
         data_url=f"{BASE}/airnow_PM2.5_{month}_data.rda"
@@ -76,6 +79,7 @@ def main():
             site=str(r.get("fullAQSID",r.get("AQSID",did)))
             state=str(r.get("stateCode",""))
             county=str(r.get("countyName",""))
+            monitor_type=str(r.get("airnow_monitorType",""))
             for k in range(11,len(vals)):
                 wv=[None if pd.isna(vals[k-i]) else float(vals[k-i]) for i in range(12)]
                 if all(v is None for v in wv): continue
@@ -101,10 +105,17 @@ def main():
                             strict_unique_by_severity[s].add((site,timestamp))
                             strict_sitedays_by_severity[s].add((site,timestamp[:10]))
                             strict_sites_by_severity[s].add(site)
+                            observed_vals=[v for v in wv if v is not None]
+                            if monitor_type.lower()=="permanent":
+                                permanent_strict_by_severity[s].add((site,timestamp))
+                            if observed_vals and max(observed_vals)<=1000:
+                                plausible_strict_by_severity[s].add((site,timestamp))
+                                if monitor_type.lower()=="permanent":
+                                    permanent_plausible_strict_by_severity[s].add((site,timestamp))
                     if low>=35.5:
                         sitehour_inelig.add((site,timestamp))
                         cases.append({"month":month,"state":state,"county":county,"site":site,"device":did,
-                                      "time":timestamp,"kind":"ineligible_but_certified","valid12":nvalid,
+                                      "time":timestamp,"kind":"ineligible_but_certified","monitor_type":monitor_type,"valid12":nvalid,
                                       "valid_recent3":nrecent,"lower":round(low,3),"lower_cat":cat(low),
                                       "official":None,"official_cat":None,
                                       "window":";".join("" if v is None else f"{v:.1f}" for v in wv)})
@@ -127,6 +138,9 @@ def main():
     for s,v in strict_unique_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sitehours_ineligible_certified_{s}"]=len(v)
     for s,v in strict_sitedays_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sitedays_ineligible_certified_{s}"]=len(v)
     for s,v in strict_sites_by_severity.items(): totals[f"strict_numeric_AQSID_unique_sites_ineligible_certified_{s}"]=len(v)
+    for s,v in permanent_strict_by_severity.items(): totals[f"permanent_strict_numeric_AQSID_unique_sitehours_ineligible_certified_{s}"]=len(v)
+    for s,v in plausible_strict_by_severity.items(): totals[f"max1000_strict_numeric_AQSID_unique_sitehours_ineligible_certified_{s}"]=len(v)
+    for s,v in permanent_plausible_strict_by_severity.items(): totals[f"permanent_max1000_strict_numeric_AQSID_unique_sitehours_ineligible_certified_{s}"]=len(v)
     cases.sort(key=lambda x:(x["lower"],x["time"]),reverse=True)
     out={
       "source":"USFS AirFire preprocessed AirNow monthly PM2.5 archive",
