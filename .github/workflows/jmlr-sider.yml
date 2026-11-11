@@ -1,0 +1,63 @@
+name: JMLR Atomicity SIDER
+
+on:
+  push:
+    branches:
+      - research/jmlr-atomicity-tox21
+    paths:
+      - 'experiments/jmlr_atomicity/sider_atomicity.py'
+      - '.github/workflows/jmlr-sider.yml'
+  workflow_dispatch:
+
+jobs:
+  sider:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - key: reproductive-random
+            target: "Reproductive system and breast disorders"
+            split: random
+          - key: reproductive-scaffold
+            target: "Reproductive system and breast disorders"
+            split: scaffold
+          - key: hepatobiliary-random
+            target: "Hepatobiliary disorders"
+            split: random
+          - key: hepatobiliary-scaffold
+            target: "Hepatobiliary disorders"
+            split: scaffold
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    name: sider-${{ matrix.key }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install experiment dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy scikit-learn rdkit
+      - name: Run SIDER atomicity experiment
+        env:
+          OUTDIR: results/sider/${{ matrix.key }}
+          TARGET_TASK: ${{ matrix.target }}
+          SPLIT_MODE: ${{ matrix.split }}
+          OMP_NUM_THREADS: '2'
+          OPENBLAS_NUM_THREADS: '2'
+          MKL_NUM_THREADS: '2'
+        run: |
+          mkdir -p results
+          python experiments/jmlr_atomicity/sider_atomicity.py | tee results/sider_console_${{ matrix.key }}.log
+      - name: Upload raw results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmlr-sider-${{ matrix.key }}
+          path: |
+            results/sider/**
+            results/sider_console_*.log
+          if-no-files-found: error
+          retention-days: 30
