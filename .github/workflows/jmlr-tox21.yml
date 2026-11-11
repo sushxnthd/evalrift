@@ -5,7 +5,7 @@ on:
     branches:
       - research/jmlr-atomicity-tox21
     paths:
-      - 'experiments/jmlr_atomicity/**'
+      - 'experiments/jmlr_atomicity/tox21_atomicity.py'
       - '.github/workflows/jmlr-tox21.yml'
   workflow_dispatch:
 
