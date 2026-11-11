@@ -1,0 +1,43 @@
+name: JMLR Atomicity Tox21
+
+on:
+  push:
+    branches:
+      - research/jmlr-atomicity-tox21
+    paths:
+      - 'experiments/jmlr_atomicity/**'
+      - '.github/workflows/jmlr-tox21.yml'
+  workflow_dispatch:
+
+jobs:
+  tox21:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install experiment dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy scikit-learn rdkit
+      - name: Run Tox21 atomicity experiment
+        env:
+          OUTDIR: results/tox21
+          OMP_NUM_THREADS: '2'
+          OPENBLAS_NUM_THREADS: '2'
+          MKL_NUM_THREADS: '2'
+        run: |
+          python experiments/jmlr_atomicity/tox21_atomicity.py | tee results/tox21_console.log
+      - name: Upload raw results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmlr-tox21-atomicity
+          path: |
+            results/tox21/**
+            results/tox21_console.log
+          if-no-files-found: error
+          retention-days: 30
