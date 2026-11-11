@@ -11,8 +11,14 @@ on:
 
 jobs:
   tox21:
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [SR-ARE, SR-MMP]
+        split: [random, scaffold]
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    name: tox21-${{ matrix.target }}-${{ matrix.split }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,19 +31,22 @@ jobs:
           python -m pip install numpy scikit-learn rdkit
       - name: Run Tox21 atomicity experiment
         env:
-          OUTDIR: results/tox21
+          OUTDIR: results/tox21/${{ matrix.target }}-${{ matrix.split }}
+          TARGET_TASK: ${{ matrix.target }}
+          SPLIT_MODE: ${{ matrix.split }}
           OMP_NUM_THREADS: '2'
           OPENBLAS_NUM_THREADS: '2'
           MKL_NUM_THREADS: '2'
         run: |
-          python experiments/jmlr_atomicity/tox21_atomicity.py | tee results/tox21_console.log
+          mkdir -p results
+          python experiments/jmlr_atomicity/tox21_atomicity.py | tee results/tox21_console_${{ matrix.target }}_${{ matrix.split }}.log
       - name: Upload raw results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: jmlr-tox21-atomicity
+          name: jmlr-tox21-${{ matrix.target }}-${{ matrix.split }}
           path: |
             results/tox21/**
-            results/tox21_console.log
+            results/tox21_console_*.log
           if-no-files-found: error
           retention-days: 30
